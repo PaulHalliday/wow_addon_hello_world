@@ -1,13 +1,20 @@
 SLASH_HELLO1 = "/helloworld"
 SLASH_HELLO2 = "/msg"
 
+local function showGreeting(name)
+    local greeting = "Hello, " .. name .. "!"
+
+    message(greeting)
+end
+
 local function HelloWorldHandler(name)
     if(string.len(name) > 0) then
-        message("Hello, " .. name .. "!")
+        showGreeting(name)
     else
         local playerName = UnitName("player")
-        message("Hello, " .. playerName .. "!")
+
+        showGreeting(playerName)
     end
 end
 
-SlashCmdList["HELLO"] = HelloWorldHandler;
+SlashCmdList["HELLO"] = HelloWorldHandler

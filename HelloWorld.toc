@@ -1,0 +1,7 @@
+## Interface: 11303
+## Title: HelloWorld
+## Notes: Prints "Hello, World" to the chat.
+## Author: Paul Halliday
+## Version: 0.0.1
+
+HelloWorld.lua
